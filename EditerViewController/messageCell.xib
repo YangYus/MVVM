@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageID" id="KGk-i7-Jjw" customClass="messageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyR-Kx-66P">
+                        <rect key="frame" x="12" y="30" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Kxy-Kh-KPn"/>
+                            <constraint firstAttribute="width" constant="20" id="ciD-jB-APB"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="zf_icon_d"/>
+                        <state key="selected" backgroundImage="zf_icon_c"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="速度快跟你说" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz3-Hm-Ljl">
+                        <rect key="frame" x="46" y="13" width="179" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="2017-10-12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpR-hb-X37">
+                        <rect key="frame" x="233" y="13" width="70" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="范德萨范德萨发的辅导费是非得失" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4Z-TE-Vvv">
+                        <rect key="frame" x="46" y="44" width="266" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zpR-hb-X37" firstAttribute="leading" secondItem="Bz3-Hm-Ljl" secondAttribute="trailing" constant="8" id="4E5-lv-6Zt"/>
+                    <constraint firstItem="Bz3-Hm-Ljl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="5rY-LY-g3V"/>
+                    <constraint firstItem="zpR-hb-X37" firstAttribute="top" secondItem="Bz3-Hm-Ljl" secondAttribute="top" id="AWw-cs-lYF"/>
+                    <constraint firstItem="dyR-Kx-66P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Mv3-jT-Ie4"/>
+                    <constraint firstAttribute="trailing" secondItem="zpR-hb-X37" secondAttribute="trailing" constant="17" id="ViO-9f-sPs"/>
+                    <constraint firstItem="X4Z-TE-Vvv" firstAttribute="top" secondItem="Bz3-Hm-Ljl" secondAttribute="bottom" constant="13" id="YR4-dG-fIM"/>
+                    <constraint firstAttribute="trailing" secondItem="X4Z-TE-Vvv" secondAttribute="trailing" constant="8" id="dah-Fy-1Wd"/>
+                    <constraint firstItem="X4Z-TE-Vvv" firstAttribute="leading" secondItem="Bz3-Hm-Ljl" secondAttribute="leading" id="gCj-9Z-yFX"/>
+                    <constraint firstItem="Bz3-Hm-Ljl" firstAttribute="leading" secondItem="dyR-Kx-66P" secondAttribute="trailing" constant="14" id="hGQ-fn-JTF"/>
+                    <constraint firstItem="dyR-Kx-66P" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k6r-6T-Jyb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="X4Z-TE-Vvv" id="o3g-Yx-hmv"/>
+                <outlet property="messageBtn" destination="dyR-Kx-66P" id="cTr-db-QPq"/>
+                <outlet property="timeLabel" destination="zpR-hb-X37" id="30y-aH-Gue"/>
+                <outlet property="titleLabel" destination="Bz3-Hm-Ljl" id="9rf-Ps-yeS"/>
+            </connections>
+            <point key="canvasLocation" x="622" y="190"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="zf_icon_c" width="20" height="20"/>
+        <image name="zf_icon_d" width="20" height="20"/>
+    </resources>
+</document>
